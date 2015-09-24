@@ -47,6 +47,7 @@
 		AC783A561BB4B9870083340B /* Scavenger HuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scavenger HuntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC783A5A1BB4B9870083340B /* Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		AC783A5C1BB4B9870083340B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC783A681BB4BA470083340B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		AC783A2E1BB4B9870083340B = {
 			isa = PBXGroup;
 			children = (
+				AC783A681BB4BA470083340B /* Social.framework */,
 				AC783A391BB4B9870083340B /* Scavenger Hunt */,
 				AC783A4E1BB4B9870083340B /* Scavenger HuntTests */,
 				AC783A591BB4B9870083340B /* Scavenger HuntUITests */,
