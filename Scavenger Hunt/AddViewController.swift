@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AddViewController.swift
 //  Scavenger Hunt
 //
 //  Created by John Xu on 9/24/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AddViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func Cancel(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
 }
 

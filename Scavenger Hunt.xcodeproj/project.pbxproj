@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		AC783A3B1BB4B9870083340B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A3A1BB4B9870083340B /* AppDelegate.swift */; };
-		AC783A3D1BB4B9870083340B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A3C1BB4B9870083340B /* ViewController.swift */; };
+		AC783A3D1BB4B9870083340B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A3C1BB4B9870083340B /* AddViewController.swift */; };
 		AC783A401BB4B9870083340B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC783A3E1BB4B9870083340B /* Main.storyboard */; };
 		AC783A421BB4B9870083340B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC783A411BB4B9870083340B /* Assets.xcassets */; };
 		AC783A451BB4B9870083340B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC783A431BB4B9870083340B /* LaunchScreen.storyboard */; };
 		AC783A501BB4B9870083340B /* Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A4F1BB4B9870083340B /* Scavenger_HuntTests.swift */; };
 		AC783A5B1BB4B9870083340B /* Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A5A1BB4B9870083340B /* Scavenger_HuntUITests.swift */; };
+		AC783A6B1BB4CBBC0083340B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A6A1BB4CBBC0083340B /* ListViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		AC783A371BB4B9870083340B /* Scavenger Hunt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Scavenger Hunt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC783A3A1BB4B9870083340B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC783A3C1BB4B9870083340B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC783A3C1BB4B9870083340B /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		AC783A3F1BB4B9870083340B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC783A411BB4B9870083340B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC783A441BB4B9870083340B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,7 +48,7 @@
 		AC783A561BB4B9870083340B /* Scavenger HuntUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scavenger HuntUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC783A5A1BB4B9870083340B /* Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		AC783A5C1BB4B9870083340B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AC783A681BB4BA470083340B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		AC783A6A1BB4CBBC0083340B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ../ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +79,6 @@
 		AC783A2E1BB4B9870083340B = {
 			isa = PBXGroup;
 			children = (
-				AC783A681BB4BA470083340B /* Social.framework */,
 				AC783A391BB4B9870083340B /* Scavenger Hunt */,
 				AC783A4E1BB4B9870083340B /* Scavenger HuntTests */,
 				AC783A591BB4B9870083340B /* Scavenger HuntUITests */,
@@ -100,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				AC783A3A1BB4B9870083340B /* AppDelegate.swift */,
-				AC783A3C1BB4B9870083340B /* ViewController.swift */,
+				AC783A3C1BB4B9870083340B /* AddViewController.swift */,
+				AC783A6A1BB4CBBC0083340B /* ListViewController.swift */,
 				AC783A3E1BB4B9870083340B /* Main.storyboard */,
 				AC783A411BB4B9870083340B /* Assets.xcassets */,
 				AC783A431BB4B9870083340B /* LaunchScreen.storyboard */,
@@ -257,8 +258,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC783A3D1BB4B9870083340B /* ViewController.swift in Sources */,
+				AC783A3D1BB4B9870083340B /* AddViewController.swift in Sources */,
 				AC783A3B1BB4B9870083340B /* AppDelegate.swift in Sources */,
+				AC783A6B1BB4CBBC0083340B /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
