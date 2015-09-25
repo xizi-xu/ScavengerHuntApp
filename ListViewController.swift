@@ -10,18 +10,18 @@ import Foundation
 import UIKit
 
 class ListViewController: UITableViewController {
-    var itemsList = [ScavengerHuntItem(name: "Cat"),
-                    ScavengerHuntItem(name: "Bird"),
-                    ScavengerHuntItem(name: "💩")]
+    // create manger which can store items in archieve
+    let myManager = itemManager()
+    
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return itemsList.count
+        return myManager.items.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ListViewCell", forIndexPath: indexPath)
         
-        let item = itemsList[indexPath.row]
+        let item = myManager.items[indexPath.row]
         cell.textLabel?.text = item.name
         
         return cell
@@ -33,8 +33,10 @@ class ListViewController: UITableViewController {
             let addVC = segue.sourceViewController as! AddViewController
             
             if let newItem = addVC.newItem {
-                itemsList += [newItem]
-                let indexPath = NSIndexPath(forRow: itemsList.count - 1, inSection: 0)
+                myManager.items += [newItem]
+                // save the items to archieve
+                myManager.save()
+                let indexPath = NSIndexPath(forRow: myManager.items.count - 1, inSection: 0)
                 tableView.insertRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
             }
         }
