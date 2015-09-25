@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="💩💩💩💩💩💩💩💩💩" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0p-ff-PmM">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K0p-ff-PmM">
                                 <rect key="frame" x="20" y="94" width="560" height="30"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -36,10 +36,18 @@
                                 <action selector="Cancel:" destination="BYZ-38-t0r" id="daB-3u-gaP"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="f6J-wp-rP8"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="f6J-wp-rP8">
+                            <connections>
+                                <segue destination="rqe-Ot-Va0" kind="unwind" identifier="DoneItem" unwindAction="unwindToList:" id="IcJ-nz-B2k"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="K0p-ff-PmM" id="XND-82-EyL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="rqe-Ot-Va0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1502" y="-353"/>
         </scene>

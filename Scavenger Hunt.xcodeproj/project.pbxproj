@@ -15,6 +15,7 @@
 		AC783A501BB4B9870083340B /* Scavenger_HuntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A4F1BB4B9870083340B /* Scavenger_HuntTests.swift */; };
 		AC783A5B1BB4B9870083340B /* Scavenger_HuntUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A5A1BB4B9870083340B /* Scavenger_HuntUITests.swift */; };
 		AC783A6B1BB4CBBC0083340B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A6A1BB4CBBC0083340B /* ListViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		AC783A6D1BB4E3380083340B /* ScavengerHuntItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC783A6C1BB4E3380083340B /* ScavengerHuntItem.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		AC783A5A1BB4B9870083340B /* Scavenger_HuntUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scavenger_HuntUITests.swift; sourceTree = "<group>"; };
 		AC783A5C1BB4B9870083340B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC783A6A1BB4CBBC0083340B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ../ListViewController.swift; sourceTree = "<group>"; };
+		AC783A6C1BB4E3380083340B /* ScavengerHuntItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScavengerHuntItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AC783A3C1BB4B9870083340B /* AddViewController.swift */,
 				AC783A6A1BB4CBBC0083340B /* ListViewController.swift */,
 				AC783A3E1BB4B9870083340B /* Main.storyboard */,
+				AC783A6C1BB4E3380083340B /* ScavengerHuntItem.swift */,
 				AC783A411BB4B9870083340B /* Assets.xcassets */,
 				AC783A431BB4B9870083340B /* LaunchScreen.storyboard */,
 				AC783A461BB4B9870083340B /* Info.plist */,
@@ -260,6 +263,7 @@
 			files = (
 				AC783A3D1BB4B9870083340B /* AddViewController.swift in Sources */,
 				AC783A3B1BB4B9870083340B /* AppDelegate.swift in Sources */,
+				AC783A6D1BB4E3380083340B /* ScavengerHuntItem.swift in Sources */,
 				AC783A6B1BB4CBBC0083340B /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
